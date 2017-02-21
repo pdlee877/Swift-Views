@@ -38,16 +38,23 @@
                                     <constraint firstAttribute="height" constant="198" id="TOq-GY-AGq"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-em-cd5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A6y-nf-iWC" secondAttribute="bottom" id="71i-C5-G9b"/>
+                            <constraint firstItem="4kw-em-cd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HlN-MN-jex"/>
+                            <constraint firstItem="4kw-em-cd5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M16-Gg-1Gc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AsD-n1-iwm" secondAttribute="bottom" id="MzY-dP-FeI"/>
                             <constraint firstAttribute="trailing" secondItem="A6y-nf-iWC" secondAttribute="trailing" id="N0T-U8-5gO"/>
                             <constraint firstItem="oZg-Wc-4lG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NB9-oL-syx"/>
                             <constraint firstItem="oZg-Wc-4lG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Qf1-SZ-5wM"/>
                             <constraint firstItem="A6y-nf-iWC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TTU-ip-dRh"/>
                             <constraint firstItem="AsD-n1-iwm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WJf-7Q-xy7"/>
+                            <constraint firstAttribute="trailing" secondItem="4kw-em-cd5" secondAttribute="trailing" id="jUY-pj-SD3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4kw-em-cd5" secondAttribute="bottom" id="mFd-BJ-nK3"/>
                             <constraint firstAttribute="trailing" secondItem="AsD-n1-iwm" secondAttribute="trailing" id="oJQ-06-p4D"/>
                             <constraint firstItem="AsD-n1-iwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vVX-Tw-gSY"/>
                         </constraints>
