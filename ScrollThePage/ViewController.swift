@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+
+    
     var images = [UIImageView]()
     
     // viewDidLoad - called AFTER the view controller's view has been loaded into memory
@@ -48,6 +50,9 @@ class ViewController: UIViewController {
             imageView.frame = CGRect(x: newX - 75, y: (scrollView.frame.size.height / 2) - 75, width: 150, height: 150)
             // setting the frame on the image AFTER it's been added to the scroll view
             // 75 is half of 150 to make the image in the ACTUAL middle and not top of the image being in the middle
+            
+            view.addGestureRecognizer(scrollView.panGestureRecognizer)
+            
         }
         
         
@@ -57,13 +62,9 @@ class ViewController: UIViewController {
         
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
         // we only want the content height to be the same size as the view itself, nothing off the screen
+        
+        
     }
-    
-    
-    
-    @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
-    }
-    
 
 }
 
