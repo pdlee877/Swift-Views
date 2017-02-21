@@ -45,9 +45,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="8U7-3R-qdA"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="4ru-Id-1RA" appends="YES" id="gKW-a7-dKD"/>
-                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,17 +63,16 @@
                             <constraint firstAttribute="trailing" secondItem="AsD-n1-iwm" secondAttribute="trailing" id="oJQ-06-p4D"/>
                             <constraint firstItem="AsD-n1-iwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vVX-Tw-gSY"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qy9-4k-phB" appends="YES" id="3T4-ZV-EMy"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="4kw-em-cd5" id="uFW-rt-h8K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="4ru-Id-1RA">
-                    <connections>
-                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="Ekd-9l-SuX"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qy9-4k-phB"/>
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>
