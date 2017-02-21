@@ -24,6 +24,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="AsD-n1-iwm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="oZg-Wc-4lG">
                                 <rect key="frame" x="252" y="44" width="107" height="100"/>
@@ -40,12 +41,17 @@
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-em-cd5">
                                 <rect key="frame" x="57.5" y="0.0" width="260" height="667"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="8U7-3R-qdA"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4ru-Id-1RA" appends="YES" id="gKW-a7-dKD"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A6y-nf-iWC" secondAttribute="bottom" id="71i-C5-G9b"/>
                             <constraint firstItem="4kw-em-cd5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M16-Gg-1Gc"/>
@@ -66,6 +72,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="4ru-Id-1RA">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="Ekd-9l-SuX"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>

@@ -58,6 +58,12 @@ class ViewController: UIViewController {
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
         // we only want the content height to be the same size as the view itself, nothing off the screen
     }
+    
+    
+    
+    @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
+    }
+    
 
 }
 
