@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var contentWidth: CGFloat = 0.0
+        
         for x in 0...2 {
             let image = UIImage(named: "icon\(x).png")
             let imageView =  UIImageView(image: image)
@@ -30,6 +32,8 @@ class ViewController: UIViewController {
             //view.frame.midX - finds the middle of the frame
             //view.frame.size.width - the width of the frame times the index
             
+            contentWidth += newX
+            
             scrollView.addSubview(imageView)
             //addSubview - adds a view to the end of the receiver's list of subviews
             
@@ -38,7 +42,8 @@ class ViewController: UIViewController {
             // 75 is half of 150 to make the image in the ACTUAL middle and not top of the image being in the middle
         }
         
-        print("Count: \(images.count)")
+        scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
+        // we only want the content height to be the same size as the view itself, nothing off the screen
         
     }
 
