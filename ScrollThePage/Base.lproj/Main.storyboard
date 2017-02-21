@@ -59,6 +59,9 @@
                             <constraint firstItem="AsD-n1-iwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vVX-Tw-gSY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="4kw-em-cd5" id="uFW-rt-h8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
